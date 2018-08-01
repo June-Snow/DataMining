@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="word">
+      <UniqueIdentifier>{8472ac06-6adc-4a8e-b18d-d913226ba97c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Utils">
+      <UniqueIdentifier>{62fbca6d-f517-495f-926f-8032f911bf57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\my code">
+      <UniqueIdentifier>{38ab56a5-5444-4047-8c21-4babef7de7a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileManage">
+      <UniqueIdentifier>{c5752b58-d382-4f78-a0a9-099df666968a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\SuiShouJi.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\SuiShouJi.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\719\affel_PNGs_029.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\719\affel_PNGs_030.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\719\affel_PNGs_032.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\719\affel_PNGs_033.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\719\affel_PNGs_029_conew1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\719\add.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\719\left.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\719\reduce.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\719\right.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\333\www.ico.la_4a1e814f57592e94d0d9c9cccfb76306_32X32.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\333\www.ico.la_4c4aecb62aac57c4cd22d13b0d357252_32X32.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\Icons\Documents\FolderOpen.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\Icons\Documents\DocumentText.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\FolderOpen.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\333\SymbolPlus.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\333\SymbolMinus1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\333\SymbolPlus2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\Icons\Miscellaneous\SymbolMinus.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\Icons\Miscellaneous\SymbolPlus.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\Icons\Toolbars\Navigate2Back.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\Icons\Toolbars\Navigate2Forward.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\Icons\Toolbars\NavigateBack.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\Icons\Toolbars\NavigateForward.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\333\ArrowLargeDown.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\333\ArrowLargeUp.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\Icons\Miscellaneous\ArrowLargeDown.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\Icons\Miscellaneous\ArrowLargeUp.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\..\folder.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\..\file.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\..\1421983746_370083.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\SymbolMinus.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\SymbolPlus.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\NavigateBack.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\NavigateForward.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ArrowLargeDown.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ArrowLargeUp.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\FolderOpen.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\DocumentText.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\logo.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\folder.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\file.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\icons\新建文件夹 (15)\图标\PlasticFantastic Icon 01.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\icons\新建文件夹 (15)\图标\chinaz5.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="D:\360安全浏览器下载\88、文件夹图标\87、文件夹图标\folder-icon-64x64.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\文件名123.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\2000px-Shang_class_SSN.svg.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap5.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\1422800119_48764.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\1422799962_36059.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\new_document.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\opened_folder.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\1422806580_285633.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\1422805040_175322.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\1422872279_392512.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\1422872878_183333.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\1422873639_183333.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\1422873961_7665.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\downarrow.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\search.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="D:\documents\Tencent Files\630996777\FileRecv\search.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\Folder１.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\img.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\search(1).ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\new_document.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\1422806580_285633.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\img.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\downarrow.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\search(1).ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\1422800119_48764.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\1422799962_36059.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Folder１.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\file.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="D:\360安全浏览器下载\深蓝精美文件夹图标（ico）\深蓝精美文件夹\Quartz-Composer.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\Smart.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\zhj48.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icon15.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\makefileappwiz.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\file_1.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\sql.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Folder.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Folders.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\foldery.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap8.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap9.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="skin\0.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="skin\1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="skin\2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="skin\3.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="skin\4.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="skin\5.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="skin\6.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="skin\7.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="skin\8.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SuiShouJi.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="suishoujiDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenMsgDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestComDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="suishouji.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InitializeCtrl.h">
+      <Filter>源文件\my code</Filter>
+    </ClInclude>
+    <ClInclude Include="CApplication.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CDocument0.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CDocuments.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CFont0.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CnlineShape.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CnlineShapes.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CPageSetup.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CParagraphFormat.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CSelection.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CTables0.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="Export.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlToExcwl.h">
+      <Filter>源文件\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CRange.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CWorkbook.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CWorkbooks.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CWorksheet.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CWorksheets.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="CApplication0.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="explorer1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EditMsgDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DB_operater.h">
+      <Filter>源文件\my code</Filter>
+    </ClInclude>
+    <ClInclude Include="MyEditBrowseCtrl.h">
+      <Filter>源文件\my code</Filter>
+    </ClInclude>
+    <ClInclude Include="AddMsgDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlMsgDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SetPasswdDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReSetPwdDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaryDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CHyperlinks.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="AdvancedSearchDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CloseDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IMVLFile.h">
+      <Filter>FileManage</Filter>
+    </ClInclude>
+    <ClInclude Include="wordSearch.h">
+      <Filter>FileManage</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeSkin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OpenMsgDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="suishouji.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="suishoujiDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestComDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InitializeCtrl.cpp">
+      <Filter>源文件\my code</Filter>
+    </ClCompile>
+    <ClCompile Include="Export.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlToExcwl.cpp">
+      <Filter>源文件\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="explorer1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EditMsgDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DB_operater.cpp">
+      <Filter>源文件\my code</Filter>
+    </ClCompile>
+    <ClCompile Include="MyEditBrowseCtrl.cpp">
+      <Filter>源文件\my code</Filter>
+    </ClCompile>
+    <ClCompile Include="AddMsgDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlMsgDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SetPasswdDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ReSetPwdDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaryDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvancedSearchDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CloseDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IMVLFile.cpp">
+      <Filter>FileManage</Filter>
+    </ClCompile>
+    <ClCompile Include="wordSearch.cpp">
+      <Filter>FileManage</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeSkin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

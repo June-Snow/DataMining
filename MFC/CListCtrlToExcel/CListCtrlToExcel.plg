@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CListCtrlToExcel - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/CListCtrlToExcel.res" /d "_DEBUG" "E:\Project\ProjectPrint\CListCtrlToExcel\CListCtrlToExcel.rc"" 
+Creating temporary file "C:\Users\Standyoo\AppData\Local\Temp\RSP7906.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/CListCtrlToExcel.pdb" /debug /machine:I386 /out:"Debug/CListCtrlToExcel.exe" /pdbtype:sept 
+.\Debug\CListCtrlToExcel.obj
+.\Debug\CListCtrlToExcelDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\CListCtrlToExcel.res
+]
+Creating command line "link.exe @C:\Users\Standyoo\AppData\Local\Temp\RSP7906.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+CListCtrlToExcel.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

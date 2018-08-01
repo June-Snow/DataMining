@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{86DAE78D-095F-41DC-B925-B8ED4613F10C}</ProjectGuid>
+    <RootNamespace>SuiShouJi</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+    <UseOfAtl>false</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Debug\</OutDir>
+    <IntDir>$(SolutionDir)_temp\</IntDir>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Release\</OutDir>
+    <IntDir>$(SolutionDir)_temp\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)WORDSDK\;$(SolutionDir)DBSDK\</AdditionalIncludeDirectories>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>DBSDK.lib;ODBCCP32.LIB;WORDSDK.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Debug\</AdditionalLibraryDirectories>
+      <StackReserveSize>16000000</StackReserveSize>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)suishouji\skin\;$(SolutionDir)DBSDK\;$(SolutionDir)WORDSDK\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)suishouji\skin\;$(SolutionDir)Release\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SkinH.lib;ODBCCP32.LIB;DBSDK.lib;WORDSDK.lib</AdditionalDependencies>
+      <StackReserveSize>16000000</StackReserveSize>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\1421983746_370083.ico" />
+    <None Include="..\..\..\file.ico" />
+    <None Include="..\..\..\folder.ico" />
+    <None Include="C:\Users\Administrator\Desktop\1422799962_36059.ico" />
+    <None Include="C:\Users\Administrator\Desktop\1422800119_48764.ico" />
+    <None Include="C:\Users\Administrator\Desktop\1422805040_175322.ico" />
+    <None Include="C:\Users\Administrator\Desktop\1422806580_285633.ico" />
+    <None Include="C:\Users\Administrator\Desktop\1422872279_392512.ico" />
+    <None Include="C:\Users\Administrator\Desktop\1422872878_183333.ico" />
+    <None Include="C:\Users\Administrator\Desktop\1422873639_183333.ico" />
+    <None Include="C:\Users\Administrator\Desktop\1422873961_7665.ico" />
+    <None Include="C:\Users\Administrator\Desktop\2000px-Shang_class_SSN.svg.png" />
+    <None Include="C:\Users\Administrator\Desktop\333\ArrowLargeDown.bmp" />
+    <None Include="C:\Users\Administrator\Desktop\333\ArrowLargeUp.bmp" />
+    <None Include="C:\Users\Administrator\Desktop\333\SymbolMinus1.bmp" />
+    <None Include="C:\Users\Administrator\Desktop\333\SymbolPlus.bmp" />
+    <None Include="C:\Users\Administrator\Desktop\333\SymbolPlus2.bmp" />
+    <None Include="C:\Users\Administrator\Desktop\333\www.ico.la_4a1e814f57592e94d0d9c9cccfb76306_32X32.ico" />
+    <None Include="C:\Users\Administrator\Desktop\333\www.ico.la_4c4aecb62aac57c4cd22d13b0d357252_32X32.ico" />
+    <None Include="C:\Users\Administrator\Desktop\719\add.ico" />
+    <None Include="C:\Users\Administrator\Desktop\719\affel_PNGs_029.png" />
+    <None Include="C:\Users\Administrator\Desktop\719\affel_PNGs_029_conew1.bmp" />
+    <None Include="C:\Users\Administrator\Desktop\719\affel_PNGs_030.png" />
+    <None Include="C:\Users\Administrator\Desktop\719\affel_PNGs_032.png" />
+    <None Include="C:\Users\Administrator\Desktop\719\affel_PNGs_033.png" />
+    <None Include="C:\Users\Administrator\Desktop\719\left.ico" />
+    <None Include="C:\Users\Administrator\Desktop\719\reduce.ico" />
+    <None Include="C:\Users\Administrator\Desktop\719\right.ico" />
+    <None Include="C:\Users\Administrator\Desktop\downarrow.ico" />
+    <None Include="C:\Users\Administrator\Desktop\file.ico" />
+    <None Include="C:\Users\Administrator\Desktop\folder.ico" />
+    <None Include="C:\Users\Administrator\Desktop\FolderOpen.bmp" />
+    <None Include="C:\Users\Administrator\Desktop\Folder１.ico" />
+    <None Include="C:\Users\Administrator\Desktop\Icons\Documents\DocumentText.ico" />
+    <None Include="C:\Users\Administrator\Desktop\Icons\Documents\FolderOpen.ico" />
+    <None Include="C:\Users\Administrator\Desktop\Icons\Miscellaneous\ArrowLargeDown.ico" />
+    <None Include="C:\Users\Administrator\Desktop\Icons\Miscellaneous\ArrowLargeUp.ico" />
+    <None Include="C:\Users\Administrator\Desktop\Icons\Miscellaneous\SymbolMinus.ico" />
+    <None Include="C:\Users\Administrator\Desktop\Icons\Miscellaneous\SymbolPlus.ico" />
+    <None Include="C:\Users\Administrator\Desktop\Icons\Toolbars\Navigate2Back.ico" />
+    <None Include="C:\Users\Administrator\Desktop\Icons\Toolbars\Navigate2Forward.ico" />
+    <None Include="C:\Users\Administrator\Desktop\Icons\Toolbars\NavigateBack.ico" />
+    <None Include="C:\Users\Administrator\Desktop\Icons\Toolbars\NavigateForward.ico" />
+    <None Include="C:\Users\Administrator\Desktop\icons\新建文件夹 (15)\图标\chinaz5.ico" />
+    <None Include="C:\Users\Administrator\Desktop\icons\新建文件夹 (15)\图标\PlasticFantastic Icon 01.ico" />
+    <None Include="C:\Users\Administrator\Desktop\img.ico" />
+    <None Include="C:\Users\Administrator\Desktop\new_document.ico" />
+    <None Include="C:\Users\Administrator\Desktop\opened_folder.ico" />
+    <None Include="C:\Users\Administrator\Desktop\search(1).ico" />
+    <None Include="C:\Users\Administrator\Desktop\search.ico" />
+    <None Include="C:\Users\Administrator\Desktop\Smart.ico" />
+    <None Include="C:\Users\Administrator\Desktop\文件名123.ico" />
+    <None Include="D:\360安全浏览器下载\88、文件夹图标\87、文件夹图标\folder-icon-64x64.png" />
+    <None Include="D:\360安全浏览器下载\深蓝精美文件夹图标（ico）\深蓝精美文件夹\Quartz-Composer.ico" />
+    <None Include="D:\documents\Tencent Files\630996777\FileRecv\search.ico" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\1422799962_36059.ico" />
+    <None Include="res\1422800119_48764.ico" />
+    <None Include="res\1422806580_285633.ico" />
+    <None Include="res\ArrowLargeDown.ico" />
+    <None Include="res\ArrowLargeUp.ico" />
+    <None Include="res\bitmap5.bmp" />
+    <None Include="res\bitmap8.bmp" />
+    <None Include="res\bitmap9.bmp" />
+    <None Include="res\DocumentText.ico" />
+    <None Include="res\downarrow.ico" />
+    <None Include="res\file.ico" />
+    <None Include="res\file_1.ico" />
+    <None Include="res\Folder.ico" />
+    <None Include="res\FolderOpen.ico" />
+    <None Include="res\Folders.ico" />
+    <None Include="res\foldery.ico" />
+    <None Include="res\Folder１.ico" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\icon15.ico" />
+    <None Include="res\img.ico" />
+    <None Include="res\logo.ico" />
+    <None Include="res\makefileappwiz.ico" />
+    <None Include="res\NavigateBack.ico" />
+    <None Include="res\NavigateForward.ico" />
+    <None Include="res\new_document.ico" />
+    <None Include="res\search(1).ico" />
+    <None Include="res\sql.ico" />
+    <None Include="res\SuiShouJi.ico" />
+    <None Include="res\SuiShouJi.rc2" />
+    <None Include="res\SymbolMinus.ico" />
+    <None Include="res\SymbolPlus.ico" />
+    <None Include="res\zhj48.ico" />
+    <None Include="skin\0.bmp" />
+    <None Include="skin\1.bmp" />
+    <None Include="skin\2.bmp" />
+    <None Include="skin\3.bmp" />
+    <None Include="skin\4.bmp" />
+    <None Include="skin\5.bmp" />
+    <None Include="skin\6.bmp" />
+    <None Include="skin\7.bmp" />
+    <None Include="skin\8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SuiShouJi.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddMsgDlg.h" />
+    <ClInclude Include="AdvancedSearchDlg.h" />
+    <ClInclude Include="CApplication.h" />
+    <ClInclude Include="CApplication0.h" />
+    <ClInclude Include="CDocument0.h" />
+    <ClInclude Include="CDocuments.h" />
+    <ClInclude Include="CFont0.h" />
+    <ClInclude Include="ChangeSkin.h" />
+    <ClInclude Include="CHyperlinks.h" />
+    <ClInclude Include="CloseDlg.h" />
+    <ClInclude Include="CnlineShape.h" />
+    <ClInclude Include="CnlineShapes.h" />
+    <ClInclude Include="CPageSetup.h" />
+    <ClInclude Include="CParagraphFormat.h" />
+    <ClInclude Include="CRange.h" />
+    <ClInclude Include="CSelection.h" />
+    <ClInclude Include="CTables0.h" />
+    <ClInclude Include="CWorkbook.h" />
+    <ClInclude Include="CWorkbooks.h" />
+    <ClInclude Include="CWorksheet.h" />
+    <ClInclude Include="CWorksheets.h" />
+    <ClInclude Include="DB_operater.h" />
+    <ClInclude Include="DiaryDlg.h" />
+    <ClInclude Include="EditMsgDlg.h" />
+    <ClInclude Include="explorer1.h" />
+    <ClInclude Include="Export.h" />
+    <ClInclude Include="HtmlMsgDlg.h" />
+    <ClInclude Include="IMVLFile.h" />
+    <ClInclude Include="InitializeCtrl.h" />
+    <ClInclude Include="ListCtrlToExcwl.h" />
+    <ClInclude Include="LoginDlg.h" />
+    <ClInclude Include="MyEditBrowseCtrl.h" />
+    <ClInclude Include="OpenMsgDlg.h" />
+    <ClInclude Include="ProgressDlg.h" />
+    <ClInclude Include="ReSetPwdDlg.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SetPasswdDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="suishouji.h" />
+    <ClInclude Include="suishoujiDlg.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestCom.h" />
+    <ClInclude Include="TestComDlg.h" />
+    <ClInclude Include="wordSearch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddMsgDlg.cpp" />
+    <ClCompile Include="AdvancedSearchDlg.cpp" />
+    <ClCompile Include="ChangeSkin.cpp" />
+    <ClCompile Include="CloseDlg.cpp" />
+    <ClCompile Include="DB_operater.cpp" />
+    <ClCompile Include="DiaryDlg.cpp" />
+    <ClCompile Include="EditMsgDlg.cpp" />
+    <ClCompile Include="explorer1.cpp" />
+    <ClCompile Include="Export.cpp" />
+    <ClCompile Include="HtmlMsgDlg.cpp" />
+    <ClCompile Include="IMVLFile.cpp" />
+    <ClCompile Include="InitializeCtrl.cpp" />
+    <ClCompile Include="ListCtrlToExcwl.cpp" />
+    <ClCompile Include="LoginDlg.cpp" />
+    <ClCompile Include="MyEditBrowseCtrl.cpp" />
+    <ClCompile Include="OpenMsgDlg.cpp" />
+    <ClCompile Include="ProgressDlg.cpp" />
+    <ClCompile Include="ReSetPwdDlg.cpp" />
+    <ClCompile Include="SetPasswdDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="suishouji.cpp" />
+    <ClCompile Include="suishoujiDlg.cpp" />
+    <ClCompile Include="TestCom.cpp" />
+    <ClCompile Include="TestComDlg.cpp" />
+    <ClCompile Include="wordSearch.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="SuiShouJi.rc" _x007B_8856F961-340A-11D0-A96B-00C04FD705A2_x007D_="CExplorer1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

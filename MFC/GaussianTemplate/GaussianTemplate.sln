@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GaussianTemplate", "GaussianTemplate\GaussianTemplate.vcxproj", "{5CAA8CD9-3D41-40A4-9BA1-9F0E9D931B0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CAA8CD9-3D41-40A4-9BA1-9F0E9D931B0F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5CAA8CD9-3D41-40A4-9BA1-9F0E9D931B0F}.Debug|Win32.Build.0 = Debug|Win32
+		{5CAA8CD9-3D41-40A4-9BA1-9F0E9D931B0F}.Release|Win32.ActiveCfg = Release|Win32
+		{5CAA8CD9-3D41-40A4-9BA1-9F0E9D931B0F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

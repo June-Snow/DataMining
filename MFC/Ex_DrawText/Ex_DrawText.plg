@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Ex_DrawText - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\admin\AppData\Local\Temp\RSPCC16.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Ex_DrawText.pdb" /debug /machine:I386 /out:"Debug/Ex_DrawText.exe" /pdbtype:sept 
+.\Debug\Ex_DrawText.obj
+.\Debug\StdAfx.obj
+.\Debug\MainFrm.obj
+.\Debug\Ex_DrawTextDoc.obj
+.\Debug\Ex_DrawTextView.obj
+.\Debug\Ex_DrawText.res
+]
+Creating command line "link.exe @C:\Users\admin\AppData\Local\Temp\RSPCC16.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+Ex_DrawText.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

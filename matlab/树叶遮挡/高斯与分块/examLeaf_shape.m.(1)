@@ -1,0 +1,63 @@
+%img = imread('F:\日常工作\树叶遮挡\新建文件夹\1000053882_00001.jpg');
+%%TODO根据灰度值来进一步确定RGB值
+scr = 'F:\日常工作\树叶遮挡\新建文件夹\图片\';
+scr_files = dir(strcat(scr, '*.jpg'));
+for i = 1 :length(scr_files)
+    img = imread(strcat(scr, scr_files(i).name));
+    name = regexp(scr_files(i).name,'\.', 'split');
+[N, M, L] = size(img);
+coordinates_all = zeros(N, M);
+center_coordinate = zeros(N, M);
+mean_g_val = zeros(N/5, M/5);
+%% 判断树叶的位置
+for i = 1 : 4 : N -4
+    for j = 1 : 4 : M -4
+        sub_img = img(i : i + 4, j : j + 4, : );
+        num = mean(mean(sub_img));
+        if((num(2) > (num(1)) ) && (num(2) > (num(3) )))
+           if ((num(2)-num(1) > 1)&&(num(2)- num(3)>1))
+            mean_g_val(floor(i/5)+1,floor(j/5)+1)=num(2);
+            
+            center_coordinate((2*i + 4)/2, (2*j + 4)/2) = 10;
+            coordinates_all(i, j : j+4) = coordinates_all(i, j : j+4) + 1;
+            coordinates_all(i + 4, j : j+4) = coordinates_all(i + 4, j : j+4) + 1;
+            coordinates_all(i : i+4, j) = coordinates_all(i : i+4, j) + 1;
+            coordinates_all(i : i+4, j+4) = coordinates_all(i : i+4, j+4) + 1;
+              %img(i : i+4, j : j+4,1:3) = 0;
+            end
+        end
+    end
+end
+%% 勾画出检测树叶的形状
+for i = 1 : N 
+    for j = 1 : M 
+        if((coordinates_all(i, j) == 1)||(coordinates_all(i, j) == 4))
+            img(i, j, 1) = 255;
+        end
+    end
+end
+%% 显示RGB中的G值
+[row, col] = size(mean_g_val);
+carray = reshape(mean_g_val,row*col,1);
+carray = sort(carray);
+count_x = zeros(255,1);
+count_y = zeros(255,1);
+j = 1;
+ for i = 1 : row*col -1
+ 
+     if(floor(carray(i)) == floor(carray(i + 1)))
+         count_y(j) = count_y(j) + 1;
+     else
+         count_x(j) = floor(carray(i));
+         j = j + 1;
+     end
+ end
+%   h = figure;
+%   plot(count_x(2:255), count_y(2:255))
+%   saveas(h,strcat('F:\日常工作\树叶遮挡\新建文件夹\', name{1}, '.jpg'));
+imshow(img);
+end
+
+
+
+

@@ -1,0 +1,210 @@
+function fre_amp = amplitude(array)
+%TODO：改进，本算法在求振幅和频率时，没有排除不完整的半周期，在视频帧数较小，周期较长时会有较大误差
+list_array = conRelArr(array);
+
+fre_amp = amplitudeFrequency(array, list_array);
+
+end
+
+function list_array = conRelArr(array)
+% 求出array中的当前帧与参考帧的连接链，
+list_array= zeros(1000,20);
+l = 1;
+len = length(array(:, 1));
+for i = 1 : len
+    cur_frame = array(i, 4);
+    con_array = zeros(1, 3);
+    D(1, 1) = i;
+    flag(1, 1) = array(i, 2);
+    arr = connectedRelation(array, len, cur_frame, i, D, flag, con_array);%求出一个当前帧的所有连接链
+    arr = unique(arr, 'rows');%除去数组中的相同行
+    for j = 1 : length(arr(:, 1)) %把数据存储到list_array
+        for k = 1 : length(arr(1, :))
+            list_array(l, k) = arr(j, k);
+        end
+        l = l + 1;
+    end
+end
+list_array = unique(list_array, 'rows');
+list_array = delRowCol(list_array);
+
+end
+
+function  con_array = connectedRelation(array, len, cur_frame, pos, D, flag, con_array)
+%functon:求出两列数据中的相关的连接，如：从第一列中选取一个数val1，得到相同行的第二列的数val2，
+%在到第一列中查找与val2相同的数，此时val1=val2,在找到同行中的第二列中的数val2.这样一个迭代过程。
+
+k = 2;
+DIM(1,1) =0;
+for i = pos : len %在第5列中选择与cur_frame相同的值存储在数组中
+    if cur_frame == array(i, 5)
+        DIM(1, 1) = cur_frame;
+        DIM(1, k) = i;
+        k = k + 1;
+    end
+end
+
+for j = 2 : length(DIM) %从数组中选取值，去查找第4列中的数值。
+    l = DIM(1, j);
+    if (l == 0)
+        break;
+    end
+    cur_frame = DIM(1, 1);
+    if cur_frame == array(l, 5)
+        if array(l, 2) == flag(1, 1);
+            cur_frame = array(l, 4);          
+            D = [D, l];
+            con_array = connectedRelation(array, len, cur_frame, l, D,  flag, con_array);
+        end
+    end
+    %数组的扩维操作
+    D = [flag(1, 1), D];   %D表示当前的连接链
+    len_D = length(D);
+    len_con_array = length(con_array(1, :));
+    for m = 1 : abs(len_D - len_con_array)    
+        if (len_D < len_con_array)
+            D = [D, 0];
+        else
+            len_con = length(con_array(:, 1));
+            C = zeros(len_con, 1);
+            con_array = [con_array, C];
+        end
+    end   
+    con_array = [con_array; D];%把D数组插入con_array中
+    D = D(1,2:length(D) - 1);
+end
+
+end
+
+function fre_amp = amplitudeFrequency(array, list_array)
+%根据当前帧与参考帧的连接链，求出振幅和一个周期中的帧数
+
+[r, ~] = find(list_array(:, 1) == 0);
+k = 0;
+for i = 1 : length(r)
+    del_r = r(i);
+    del_r = del_r - k;
+    list_array(del_r, :) = [];
+    k = k + 1;
+end
+
+len = length(list_array(:, 1));
+%dir_fre_amp = 
+pos_array = zeros(1, 3);%方向，周期帧数，振幅
+neg_array = zeros(1, 3);
+for i = 1 : len    
+    single_list = list_array(i, :);    
+    if single_list(1, 1) == 1      
+         pos_arr = ampFre(single_list, array);
+         pos_array = [pos_array; pos_arr];
+    else
+        neg_arr = ampFre(single_list, array);
+        neg_array = [neg_array; neg_arr];
+    end
+end
+pos_array = delRowCol(pos_array);
+neg_array = delRowCol(neg_array);
+
+[pos_frame, pos_amp] = freAmp(pos_array);
+[neg_frame, neg_amp] = freAmp(neg_array);
+if pos_frame == 0 || neg_frame == 0
+    frame = round((pos_frame + neg_frame));
+else
+   frame = round((pos_frame + neg_frame)/2); 
+end
+if pos_amp == 0 || neg_amp == 0
+    amp = (pos_amp + neg_amp);
+else
+    amp = (pos_amp + neg_amp)/2;
+end
+
+fre_amp = [frame, amp];
+end
+
+function dir_fre_amp = ampFre(single_list, array)
+%
+amplitude = 0;
+dir_fre_amp = zeros(1, 3);
+dir_fre_amp(1, 1) = single_list(1, 1);
+for j = 2 : length(single_list)
+    start = array(single_list(1, 2), 5);
+    val = single_list(1, j);
+    if val ~= 0
+        amplitude = amplitude + array(val, 3);
+    else
+        frame_long = array(single_list(1, j - 1), 4) - start + 1;
+        dir_fre_amp(1, 2) = frame_long;
+        dir_fre_amp(1, 3) = amplitude;
+        break;
+    end
+end
+end
+
+function array = delRowCol(array)
+%删除array中含0的行
+del_sum = 0;
+len = length(array(:, 1));
+for i = 1 : len
+    if del_sum + i ~= len;
+        if array(i, 1) == 0
+            array(i, :) = [];            
+        end
+    end
+end
+end
+
+function [frame, amp] = freAmp(array)
+
+amp = 0;
+frame = 0;
+% val = 0;
+% k = 1;
+len = length(array(:, 1));
+
+[arr, pos] = sort(array(:, 2));
+array(:, 1) = array(pos, 1);
+array(:, 3) = array(pos, 3);
+array(:, 2) = arr;
+
+[r, ~] = find(array(:, 1) == 0);
+k = 0;
+for i = 1 : length(r)
+    del_r = r(i);
+    del_r = del_r - k;
+    array(del_r, :) = [];
+    k = k + 1;
+end
+len_arr = length(array(:, 1));
+if len_arr == 0
+    amp = 0;
+    frame =0;
+else
+    if len/2 > len_arr
+        for i = 1 : len_arr
+            amp = amp + array(i, 3);
+            frame = frame + array(i, 2);
+        end
+        amp = amp/(len_arr);
+        frame = frame/(len_arr);
+    else
+        val = ceil(len_arr*5/8);
+        if val == len_arr
+                amp = amp + array(1, 3);
+                frame = frame + array(1, 2);
+        else
+            for i = val : len_arr
+                amp = amp + array(i, 3);
+                frame = frame + array(i, 2);
+            end
+            amp = amp/(len_arr - val);
+            frame = frame/(len_arr - val);
+        end
+    end
+end
+
+
+
+end
+
+
+
