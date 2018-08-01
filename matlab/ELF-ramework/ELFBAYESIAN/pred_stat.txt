@@ -1,0 +1,24 @@
+	prior_normal: 0.900000
+漏检率(miss detection, 视频有遮挡但是没有检测出来）:
+miss detect:0.145161
+误报率(false alarm,视频没有遮挡但是检测出遮挡）:
+false alarm:0.100000
+
+	prior_normal: 0.890000
+漏检率(miss detection, 视频有遮挡但是没有检测出来）:
+miss detect:0.145161
+误报率(false alarm,视频没有遮挡但是检测出遮挡）:
+false alarm:0.108333
+
+	prior_normal: 0.880000
+漏检率(miss detection, 视频有遮挡但是没有检测出来）:
+miss detect:0.145161
+误报率(false alarm,视频没有遮挡但是检测出遮挡）:
+false alarm:0.108333
+
+	prior_normal: 0.870000
+漏检率(miss detection, 视频有遮挡但是没有检测出来）:
+miss detect:0.112903
+误报率(false alarm,视频没有遮挡但是检测出遮挡）:
+false alarm:0.108333
+
