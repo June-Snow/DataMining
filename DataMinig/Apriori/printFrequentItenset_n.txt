@@ -1,0 +1,314 @@
+---------------------Frequent Itemset|
+共有1749张含有树叶的正常图片Suppoort--------------------
+FI 1:               1|support:1001
+FI 2:               2|support:818
+FI 3:               3|support:901
+FI 4:               4|support:180
+FI 5:               5|support:103
+FI 6:               6|support:196
+FI 7:               7|support:101
+FI 8:               8|support:47
+FI 9:               9|support:91
+FI10:               1, 2|support:504
+FI11:               1, 3|support:440
+FI12:               1, 4|support:123
+FI13:               1, 5|support:32
+FI14:               1, 6|support:63
+FI15:               1, 7|support:53
+FI16:               1, 8|support:15
+FI17:               1, 9|support:33
+FI18:               2, 3|support:490
+FI19:               2, 4|support:66
+FI20:               2, 5|support:51
+FI21:               2, 6|support:81
+FI22:               2, 7|support:28
+FI23:               2, 8|support:15
+FI24:               2, 9|support:28
+FI25:               3, 4|support:61
+FI26:               3, 5|support:44
+FI27:               3, 6|support:118
+FI28:               3, 7|support:32
+FI29:               3, 8|support:13
+FI30:               3, 9|support:36
+FI31:               4, 5|support:21
+FI32:               4, 6|support:35
+FI33:               4, 7|support:44
+FI34:               4, 8|support:8
+FI35:               4, 9|support:14
+FI36:               5, 6|support:45
+FI37:               5, 7|support:8
+FI38:               5, 8|support:21
+FI39:               5, 9|support:8
+FI40:               6, 7|support:13
+FI41:               6, 8|support:10
+FI42:               6, 9|support:43
+FI43:               7, 8|support:13
+FI44:               7, 9|support:11
+FI45:               8, 9|support:14
+FI46:               1, 2, 3|support:311
+FI47:               1, 2, 4|support:56
+FI48:               1, 2, 5|support:23
+FI49:               1, 2, 6|support:41
+FI50:               1, 2, 7|support:20
+FI51:               1, 2, 8|support:10
+FI52:               1, 2, 9|support:19
+FI53:               1, 3, 4|support:49
+FI54:               1, 3, 5|support:20
+FI55:               1, 3, 6|support:47
+FI56:               1, 3, 7|support:22
+FI57:               1, 3, 8|support:4
+FI58:               1, 3, 9|support:15
+FI59:               1, 4, 5|support:11
+FI60:               1, 4, 6|support:23
+FI61:               1, 4, 7|support:30
+FI62:               1, 4, 8|support:5
+FI63:               1, 4, 9|support:9
+FI64:               1, 5, 6|support:15
+FI65:               1, 5, 7|support:2
+FI66:               1, 5, 8|support:6
+FI67:               1, 5, 9|support:5
+FI68:               1, 6, 7|support:7
+FI69:               1, 6, 8|support:6
+FI70:               1, 6, 9|support:13
+FI71:               1, 7, 8|support:6
+FI72:               1, 7, 9|support:2
+FI73:               1, 8, 9|support:5
+FI74:               2, 3, 4|support:39
+FI75:               2, 3, 5|support:32
+FI76:               2, 3, 6|support:65
+FI77:               2, 3, 7|support:18
+FI78:               2, 3, 8|support:8
+FI79:               2, 3, 9|support:16
+FI80:               2, 4, 5|support:8
+FI81:               2, 4, 6|support:16
+FI82:               2, 4, 7|support:12
+FI83:               2, 4, 8|support:2
+FI84:               2, 4, 9|support:3
+FI85:               2, 5, 6|support:25
+FI86:               2, 5, 7|support:1
+FI87:               2, 5, 8|support:9
+FI88:               2, 5, 9|support:4
+FI89:               2, 6, 7|support:6
+FI90:               2, 6, 8|support:5
+FI91:               2, 6, 9|support:12
+FI92:               2, 7, 8|support:4
+FI93:               2, 7, 9|support:3
+FI94:               2, 8, 9|support:4
+FI95:               3, 4, 5|support:12
+FI96:               3, 4, 6|support:22
+FI97:               3, 4, 7|support:12
+FI98:               3, 4, 9|support:6
+FI99:               3, 5, 6|support:26
+FI100:               3, 5, 7|support:2
+FI101:               3, 5, 8|support:7
+FI102:               3, 5, 9|support:4
+FI103:               3, 6, 7|support:10
+FI104:               3, 6, 8|support:5
+FI105:               3, 6, 9|support:20
+FI106:               3, 7, 8|support:3
+FI107:               3, 7, 9|support:5
+FI108:               3, 8, 9|support:4
+FI109:               4, 5, 6|support:13
+FI110:               4, 5, 7|support:1
+FI111:               4, 5, 8|support:2
+FI112:               4, 5, 9|support:3
+FI113:               4, 6, 7|support:4
+FI114:               4, 6, 8|support:1
+FI115:               4, 6, 9|support:6
+FI116:               4, 7, 8|support:6
+FI117:               4, 7, 9|support:5
+FI118:               4, 8, 9|support:4
+FI119:               5, 6, 7|support:3
+FI120:               5, 6, 8|support:6
+FI121:               5, 6, 9|support:6
+FI122:               5, 7, 8|support:3
+FI123:               5, 7, 9|support:2
+FI124:               5, 8, 9|support:5
+FI125:               6, 7, 8|support:2
+FI126:               6, 7, 9|support:2
+FI127:               6, 8, 9|support:6
+FI128:               7, 8, 9|support:5
+FI129:               1, 2, 3, 4|support:33
+FI130:               1, 2, 3, 5|support:15
+FI131:               1, 2, 3, 6|support:33
+FI132:               1, 2, 3, 7|support:13
+FI133:               1, 2, 3, 8|support:4
+FI134:               1, 2, 3, 9|support:10
+FI135:               1, 2, 4, 5|support:6
+FI136:               1, 2, 4, 6|support:13
+FI137:               1, 2, 4, 7|support:10
+FI138:               1, 2, 4, 8|support:2
+FI139:               1, 2, 4, 9|support:3
+FI140:               1, 2, 5, 6|support:10
+FI141:               1, 2, 5, 8|support:5
+FI142:               1, 2, 5, 9|support:3
+FI143:               1, 2, 6, 7|support:4
+FI144:               1, 2, 6, 8|support:5
+FI145:               1, 2, 6, 9|support:7
+FI146:               1, 2, 7, 8|support:3
+FI147:               1, 2, 7, 9|support:1
+FI148:               1, 2, 8, 9|support:3
+FI149:               1, 3, 4, 5|support:7
+FI150:               1, 3, 4, 6|support:17
+FI151:               1, 3, 4, 7|support:10
+FI152:               1, 3, 4, 9|support:4
+FI153:               1, 3, 5, 6|support:12
+FI154:               1, 3, 5, 7|support:2
+FI155:               1, 3, 5, 8|support:3
+FI156:               1, 3, 5, 9|support:3
+FI157:               1, 3, 6, 7|support:7
+FI158:               1, 3, 6, 8|support:3
+FI159:               1, 3, 6, 9|support:7
+FI160:               1, 3, 7, 8|support:1
+FI161:               1, 3, 7, 9|support:1
+FI162:               1, 3, 8, 9|support:1
+FI163:               1, 4, 5, 6|support:7
+FI164:               1, 4, 5, 8|support:1
+FI165:               1, 4, 5, 9|support:2
+FI166:               1, 4, 6, 7|support:3
+FI167:               1, 4, 6, 8|support:1
+FI168:               1, 4, 6, 9|support:5
+FI169:               1, 4, 7, 8|support:3
+FI170:               1, 4, 7, 9|support:2
+FI171:               1, 4, 8, 9|support:2
+FI172:               1, 5, 6, 7|support:1
+FI173:               1, 5, 6, 8|support:4
+FI174:               1, 5, 6, 9|support:4
+FI175:               1, 5, 8, 9|support:3
+FI176:               1, 6, 7, 8|support:1
+FI177:               1, 6, 8, 9|support:4
+FI178:               2, 3, 4, 5|support:7
+FI179:               2, 3, 4, 6|support:13
+FI180:               2, 3, 4, 7|support:5
+FI181:               2, 3, 4, 9|support:2
+FI182:               2, 3, 5, 6|support:20
+FI183:               2, 3, 5, 8|support:6
+FI184:               2, 3, 5, 9|support:3
+FI185:               2, 3, 6, 7|support:5
+FI186:               2, 3, 6, 8|support:3
+FI187:               2, 3, 6, 9|support:7
+FI188:               2, 3, 7, 8|support:2
+FI189:               2, 3, 7, 9|support:2
+FI190:               2, 3, 8, 9|support:2
+FI191:               2, 4, 5, 6|support:5
+FI192:               2, 4, 6, 7|support:1
+FI193:               2, 4, 6, 9|support:2
+FI194:               2, 4, 7, 8|support:2
+FI195:               2, 4, 7, 9|support:1
+FI196:               2, 5, 6, 7|support:1
+FI197:               2, 5, 6, 8|support:3
+FI198:               2, 5, 6, 9|support:3
+FI199:               2, 5, 8, 9|support:2
+FI200:               2, 6, 7, 8|support:1
+FI201:               2, 6, 8, 9|support:3
+FI202:               2, 7, 8, 9|support:1
+FI203:               3, 4, 5, 6|support:9
+FI204:               3, 4, 5, 9|support:1
+FI205:               3, 4, 6, 7|support:4
+FI206:               3, 4, 6, 9|support:4
+FI207:               3, 4, 7, 9|support:2
+FI208:               3, 5, 6, 7|support:1
+FI209:               3, 5, 6, 8|support:2
+FI210:               3, 5, 6, 9|support:3
+FI211:               3, 5, 8, 9|support:1
+FI212:               3, 6, 7, 8|support:1
+FI213:               3, 6, 7, 9|support:1
+FI214:               3, 6, 8, 9|support:2
+FI215:               3, 7, 8, 9|support:2
+FI216:               4, 5, 6, 8|support:1
+FI217:               4, 5, 6, 9|support:2
+FI218:               4, 5, 7, 8|support:1
+FI219:               4, 5, 7, 9|support:1
+FI220:               4, 5, 8, 9|support:2
+FI221:               4, 6, 7, 9|support:1
+FI222:               4, 6, 8, 9|support:1
+FI223:               4, 7, 8, 9|support:2
+FI224:               5, 6, 7, 8|support:1
+FI225:               5, 6, 7, 9|support:1
+FI226:               5, 6, 8, 9|support:4
+FI227:               5, 7, 8, 9|support:2
+FI228:               6, 7, 8, 9|support:1
+FI229:               1, 2, 3, 4, 5|support:5
+FI230:               1, 2, 3, 4, 6|support:11
+FI231:               1, 2, 3, 4, 7|support:4
+FI232:               1, 2, 3, 4, 9|support:2
+FI233:               1, 2, 3, 5, 6|support:9
+FI234:               1, 2, 3, 5, 8|support:3
+FI235:               1, 2, 3, 5, 9|support:2
+FI236:               1, 2, 3, 6, 7|support:4
+FI237:               1, 2, 3, 6, 8|support:3
+FI238:               1, 2, 3, 6, 9|support:4
+FI239:               1, 2, 3, 7, 8|support:1
+FI240:               1, 2, 3, 8, 9|support:1
+FI241:               1, 2, 4, 5, 6|support:3
+FI242:               1, 2, 4, 6, 7|support:1
+FI243:               1, 2, 4, 6, 9|support:2
+FI244:               1, 2, 4, 7, 8|support:2
+FI245:               1, 2, 4, 7, 9|support:1
+FI246:               1, 2, 5, 6, 8|support:3
+FI247:               1, 2, 5, 6, 9|support:2
+FI248:               1, 2, 5, 8, 9|support:2
+FI249:               1, 2, 6, 7, 8|support:1
+FI250:               1, 2, 6, 8, 9|support:3
+FI251:               1, 3, 4, 5, 6|support:5
+FI252:               1, 3, 4, 5, 9|support:1
+FI253:               1, 3, 4, 6, 7|support:3
+FI254:               1, 3, 4, 6, 9|support:3
+FI255:               1, 3, 4, 7, 9|support:1
+FI256:               1, 3, 5, 6, 7|support:1
+FI257:               1, 3, 5, 6, 8|support:2
+FI258:               1, 3, 5, 6, 9|support:2
+FI259:               1, 3, 5, 8, 9|support:1
+FI260:               1, 3, 6, 7, 8|support:1
+FI261:               1, 3, 6, 8, 9|support:1
+FI262:               1, 4, 5, 6, 8|support:1
+FI263:               1, 4, 5, 6, 9|support:2
+FI264:               1, 4, 5, 8, 9|support:1
+FI265:               1, 4, 6, 8, 9|support:1
+FI266:               1, 5, 6, 8, 9|support:3
+FI267:               2, 3, 4, 5, 6|support:5
+FI268:               2, 3, 4, 6, 7|support:1
+FI269:               2, 3, 4, 6, 9|support:2
+FI270:               2, 3, 5, 6, 8|support:2
+FI271:               2, 3, 5, 6, 9|support:2
+FI272:               2, 3, 5, 8, 9|support:1
+FI273:               2, 3, 6, 7, 8|support:1
+FI274:               2, 3, 6, 8, 9|support:1
+FI275:               2, 3, 7, 8, 9|support:1
+FI276:               2, 5, 6, 8, 9|support:2
+FI277:               3, 4, 5, 6, 9|support:1
+FI278:               3, 4, 6, 7, 9|support:1
+FI279:               3, 5, 6, 8, 9|support:1
+FI280:               4, 5, 6, 8, 9|support:1
+FI281:               4, 5, 7, 8, 9|support:1
+FI282:               5, 6, 7, 8, 9|support:1
+FI283:               1, 2, 3, 4, 5, 6|support:3
+FI284:               1, 2, 3, 4, 6, 7|support:1
+FI285:               1, 2, 3, 4, 6, 9|support:2
+FI286:               1, 2, 3, 5, 6, 8|support:2
+FI287:               1, 2, 3, 5, 6, 9|support:1
+FI288:               1, 2, 3, 5, 8, 9|support:1
+FI289:               1, 2, 3, 6, 7, 8|support:1
+FI290:               1, 2, 3, 6, 8, 9|support:1
+FI291:               1, 2, 5, 6, 8, 9|support:2
+FI292:               1, 3, 4, 5, 6, 9|support:1
+FI293:               1, 3, 5, 6, 8, 9|support:1
+FI294:               1, 4, 5, 6, 8, 9|support:1
+FI295:               2, 3, 5, 6, 8, 9|support:1
+FI296:               1, 2, 3, 5, 6, 8, 9|support:1
+
+
+
+一块出现的次数：3438
+两块出现的次数：2634
+三块出现的次数：1297
+四块出现的次数：459
+五块出现的次数：122
+六块出现的次数：18
+七块出现的次数：1
+八块出现的次数：0
+九块出现的次数：0
+
+
+
+
